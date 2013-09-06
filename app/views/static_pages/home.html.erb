@@ -1,2 +1,24 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Home') %>
+<!-- The line above is rails function provide to tset a different title on each page, 
+but at the same time still using same writing Ruby on Rails Tutorial Sample App -->
+
+<!DOCTYPE html>
+<html>
+    
+        <!-- Example of Embedded ruby (erb) - using provide at the top and yield in application.html.erb file. 
+        This is to include dynamic content in web pages.
+        the tag provide % indicates rails should call provide function and associate the string 'Home' with the label :title. 
+        the tag yield is to insert the title into the template using ruby's yield function 
+
+        No need for title anymore. All is handled by application.html.erb file -->
+    
+    <body>
+        <h1>My ruby app</h1>
+        <p>
+            This is the home page for all the exercise in
+            <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+            sample application.
+        </p>
+    </body>
+</html>
+
