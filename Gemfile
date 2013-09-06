@@ -6,11 +6,21 @@ gem 'rails', '4.0.0'
 
 group :development, :test do
     gem 'rspec-rails'
+    gem 'guard-rspec'
 end
 
 group :test do
     gem 'selenium-webdriver'
     gem 'capybara'
+    # Uncomment this line on OS X
+    # gem 'growl'
+    # Uncomment this line on Linux
+    gem 'libnotify'
+    # Uncomment these lines on Windows
+    # gem 'rb-notifu'
+    # gem 'win32console'
+    # gem 'wdm'
+
 end
 
 # Use postgresql as the database for Active Record
