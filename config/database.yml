@@ -27,12 +27,7 @@ test:
 
 production:
   adapter: postgresql
-  database: myrubyapp-development
-  pool: 5
-  timeout: 5000
-  username: myapp
-  password: password
-  reconnect: false
-  encoding: utf8
-
-
+  database: d3tta5sm0rclnl
+  username: kbgzmhmpzmrvat
+  port: 5432
+  password: cCh0yftFEXXCEFo9bwv6omX_Pl
